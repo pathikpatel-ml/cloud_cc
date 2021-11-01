@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js"></script>
+</head>
+<body>
+   
+        
+
+<form name="Form" onsubmit="return validateForm()" >
+    <h2>Registration Form</h2>
+    <div class="box">
+        <label>patient Name</label>
+        <input type="text" name="name" id="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="box">
+        <label>Age</label>
+        <input type="text" name="age" id="age">
+        <div class="error" id="ageErr"></div>
+    </div>
+    <div class="box">
+        <label>City</label>
+        <input type="text" name="city" id="city">
+        <div class="error" id="cityErr"></div>
+    </div>
+    <div class="box">
+        <label>State</label>
+        <input type="text" name="state" id="state">
+        <div class="error" id="stateErr"></div>
+    </div>
+    <div class="box">
+        <label>Pincode</label>
+        <input type="text" name="pincode" id="pincode">
+        <div class="error" id="pinErr"></div>
+    </div>
+    <div class="box">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" maxlength="10" id="mobile">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="box">
+        <label>Gender</label>
+        <div class="form-inline" id="gender">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label> 
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+
+    <div>
+        <label>BloodGroup</label>
+         <select name="bloodgroup" id="bloodgroup">
+    <option>A Positive</option>
+    <option>A Negative</option>
+    <option>A Unknown</option>
+    <option>B Positive</option>
+    <option>B Negative</option>
+    <option>B Unknown</option>
+    <option>AB Positive</option>
+    <option>AB Negative</option>
+    <option>AB Unknown</option>
+    <option>O Positive</option>
+    <option>O Negative</option>
+    <option>O Unknown</option>
+    <option>Unknown</option>
+</select>
+    </div>
+    <div>
+        <label>Image</label>
+        <input type="file" name="file" id="image">
+    </div>
+          
+    <div class="box">
+        <input type="submit" value="Submit">
+    </div>
+     <div class="box">
+        <label>Dispaly Image</label>
+    </div>
+</form>
+
+
+</body>
+</html>
