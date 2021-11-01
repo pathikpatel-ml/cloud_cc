@@ -5,3 +5,4 @@ Jinja2==2.10.1
 MarkupSafe==1.1.1
 Werkzeug==2.0.2
 numpy>=1.9.2
+WSGIserver==1.3
