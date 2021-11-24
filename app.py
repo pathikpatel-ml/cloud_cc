@@ -13,7 +13,7 @@ import psycopg2.extras
 import torchvision
 import torch
 import numpy as np
-MODEL_PATH = 'https://drive.google.com/file/d/1ogCu26L6cMt9KEN_IwcA8H1lK_e7yXfP/view?usp=sharing'
+MODEL_PATH = 'https://drive.google.com/file/d/1xEO67L9Do9wQYLLv2IpBQ3JvCFfO6L67/view?usp=sharing'
 resnet18 = torchvision.models.resnet18(pretrained=True)
 resnet18.fc = torch.nn.Linear(in_features=512, out_features=3)
 
